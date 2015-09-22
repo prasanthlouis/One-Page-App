@@ -49,6 +49,7 @@ animateApp.controller('contactController', function($scope) {
 animateApp.controller('workController', function($scope) {
     $scope.pageClass = 'page-work'; 
     $scope.message='http://testingprasanth.site50.net/programplanet/';
+     $scope.channel='http://testingprasanth.site50.net/Bolt/';
           
 });
 

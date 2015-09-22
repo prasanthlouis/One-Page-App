@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+  </head>
+  <body ng-app="BoltNetworkApp">
+    <div class="header">
+      <div class="container">
+        <img src="img/bolt.png" width="180" height="34">
+      </div>
+    </div>
+
+    <div class="main" ng-controller="MainController">
+      <div class="container" ng-repeat="product in program">
+        <div class="content">
+          <div class="row">
+         
+            <div class="col-md-3" class="series_img">
+               <img src="{{product.series_img}}">
+            </div>
+            
+            <div class="col-md-6">
+              <h1 class="series">{{product.series}}</h1>
+              <h2 class="episode">{{product.episode}}</h2>
+              <p class="description">{{product.description}}</p>
+            </div>
+
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item"><span>Date:   </span>{{product.datetime|date}}  </li>
+                <li class="list-group-item"><span>On air:</span>{{ product.datetime | date:'EEEE' }}  </li>
+                <li class="list-group-item"><span>Time:</span>{{ product.datetime | date:'shortTime' }}  </li>
+                <li class="list-group-item"><span>Season:</span>{{product.season}}  </li>
+                <li class="list-group-item"><span>Genre:</span> {{product.genre}} </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Bolt</h3>
+            <ul>
+              <li><a href="https://google.com">Careers</a></li>
+              <li><a href="https://google.com">Terms</a></li>
+              <li><a href="https://google.com">Help</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>More Bolt</h3>
+            <ul>
+              <li><a href="https://google.com">Gift Cards</a></li>
+              <li><a href="https://google.com">Trailers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>News</h3>
+            <ul>
+              <li><a href="https://google.com">Blog<a></li>
+              <li><a href="https://twitter.com">Twitter</a></li>
+              <li><a href="https://youtube.com">YouTube</a></li>
+              <li><a href="https://google.com">Google+</a></li>
+              <li><a href="https://facebook.com">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+  </body>
+</html>

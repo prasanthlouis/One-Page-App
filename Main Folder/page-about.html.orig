@@ -1,0 +1,30 @@
+  <div class="jumbotron text-center">
+        <h1>About Me!</h1>
+
+        <p>{{ message }}</p>
+
+
+    </div>
+      <div class="jumbotron text-center">
+        <h1>Linkedin</h1>
+
+      <p><a href="{{ linkedin }}">{{linkedin}}</a></p>
+      </div>
+      <div class="jumbotron text-center">
+        <h1>Github</h1>
+
+        <p><a href="{{ github }}">{{ github}}</a></p>
+      </div>
+      <div class="jumbotron text-center">
+        <h1>Quora</h1>
+
+        <p><a href="{{quora}}">{{ quora }}</a></p>
+      </div>
+      <div class="jumbotron text-center">
+        <h1>Stackoverflow</h1>
+
+        <p><a href="{{ stackoverflow }}">{{ stackoverflow }}</a></p>
+      </div>
+
+
+          
