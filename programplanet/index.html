@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+  </head>
+  <body ng-app="PizzaPlanetApp">
+    <div class="header">
+      <h1><span>PROGRAM</span><span>Planet</span></h1>
+    </div>
+
+    <div class="main" ng-controller="MainController">
+      <div class="container">
+        <h1>Specials for {{ today | date }}</h1>
+                <h2>Appetizers</h2>
+        <div class="appetizer row" ng-repeat="app in appetizers">
+          <div class="item col-md-9">
+            <h3 class="name">{{app.name}} </h3>
+            <p class="description">{{app.description}} </p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{app.price |currency}} </p>
+          </div>
+        </div>
+        <h2>Mains</h2>
+          <div class="main row" ng-repeat="app in mains">
+          <div class="item col-md-9">
+            <h3 class="name">{{app.name}} </h3>
+            <p class="description">{{app.description}} </p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{app.price |currency}} </p>
+          </div>
+        </div>
+        <h2>Extras</h2>
+        <div class="extras row" ng-repeat="app in extras">
+          <div class="item col-md-9">
+            <h3 class="name">{{app.name}} </h3>
+            <p class="description">{{app.description}} </p>
+          </div>
+          <div class="price col-md-3">
+            <p class="price">{{app.price |currency}} </p>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+
+    <div class="footer">
+    </div>
+    
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+  </body>
+</html>

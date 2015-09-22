@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+  <!-- bootstrap and font-awesome-->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+  
+  <!-- JS -->
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+  <!--animation JS-->
+  <script src="app.js"></script>
+  <!--routing JS
+  <script src="script.js"></script>-->
+
+</head>
+
+<!-- apply our angular app -->
+<body ng-app="animateApp">
+   <header>
+           <!-- bootstrap for navbar-->
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Prasanth Louis</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                   <!-- font awesome-->
+                    <li><a href="#"><i class="fa fa-laptop"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-rocket"></i> About Me</a></li>
+                    <li><a href="#contact"><i class="fa fa-coffee"></i> Contact Me</a></li>
+                    <li><a href="#work"><i class="fa fa-list-alt"></i>Select Work</a></li>
+                  
+                </ul>
+            </div>
+            </nav>
+        </header>
+
+ <!-- injection-->
+  <div class="page {{ pageClass }}" ng-view></div>
+    
+
+    
+</body>
+    <!-- Application Dependencies -->
+    <script src="node_modules/api-check/dist/api-check.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-formly/dist/formly.js"></script>
+    <script src="node_modules/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+
+    <!-- Application Scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/MainController.js"></script>
+    <script src="scripts/determine.js"></script>
+</html>
