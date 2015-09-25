@@ -51,8 +51,9 @@ animateApp.controller('workController', function($scope) {
     $scope.weather='http://testingprasanth.site50.net/Service/';
     $scope.message='http://testingprasanth.site50.net/programplanet/';
     $scope.channel='http://testingprasanth.site50.net/Bolt/';
-    $scope.broad='http://testingprasanth.site50.net/broadway/html.html';
-   
+    $scope.broad='http://testingprasanth.site50.net/broadway';
+       $scope.cloud='http://testingprasanth.site50.net/cloud';
+       $scope.sports='http://testingprasanth.site50.net/sports';   
 
           
 });
