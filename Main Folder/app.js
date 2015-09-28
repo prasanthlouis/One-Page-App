@@ -53,7 +53,9 @@ animateApp.controller('workController', function($scope) {
     $scope.channel='http://testingprasanth.site50.net/Bolt/';
     $scope.broad='http://testingprasanth.site50.net/broadway';
        $scope.cloud='http://testingprasanth.site50.net/cloud';
-       $scope.sports='http://testingprasanth.site50.net/sports';   
+       $scope.sports='http://testingprasanth.site50.net/sports';  
+       $scope.railmsg="https://powerful-bastion-3820.herokuapp.com/messages" ;
+         $scope.music="https://afternoon-inlet-9197.herokuapp.com/albums"; 
 
           
 });
