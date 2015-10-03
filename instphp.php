@@ -12,7 +12,7 @@ if (!empty($_GET['location'])){
     'api.instagram.com/v1/media/search' .
     '?lat=' . $lat .
     '&lng=' . $lng .
-    '&client_id=ff0f7f3487074c36912e95f9241ece1a';
+    '&client_id=abc';
   $instagram_json = file_get_contents($instagram_url);
   $instagram_array = json_decode($instagram_json, true);
 }
